@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media News Carousel</title>
+   <style>
+    .carousel-container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .carousel {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+    
+    .carousel-item {
+        min-width: 100%;
+        position: relative;
+    }
+    
+    .publisher-name {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    
+    .content {
+        display: flex;
+        height: 300px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .background-image {
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .overlay-text {
+        text-align: center;
+        color: #fff;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    
+    h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    .read-more-btn {
+        background-color: #ff5722;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    
+    .read-more-btn:hover {
+        background-color: #e64a19;
+    }
+    
+   </style>
+</head>
+<body>
+
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-item">
+                <div class="publisher-name">Publisher 1</div>
+                <div class="content">
+                    <div class="background-image" style="background-image: url('image1.jpg');">
+                        <div class="overlay-text">
+                            <h2>News Headline 1</h2>
+                            <p>Short description about the news...</p>
+                            <a href="#" class="read-more-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="publisher-name">Publisher 2</div>
+                <div class="content">
+                    <div class="background-image" style="background-image: url('image2.jpg');">
+                        <div class="overlay-text">
+                            <h2>News Headline 2</h2>
+                            <p>Brief details about the news...</p>
+                            <a href="#" class="read-more-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- More items can be added here -->
+        </div>
+    </div>
+    
+<!-- Bootstrap JS -->
+ <script>let currentIndex = 0;
+
+    function moveCarousel() {
+        const items = document.querySelectorAll('.carousel-item');
+        const totalItems = items.length;
+    
+        currentIndex = (currentIndex + 1) % totalItems;
+    
+        const carousel = document.querySelector('.carousel');
+        carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+    
+    // Change the carousel every 5 seconds
+    setInterval(moveCarousel, 5000);
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
