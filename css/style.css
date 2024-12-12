@@ -4129,6 +4129,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-nav {
+  gap:5px;
   display: flex;
   flex-direction: column;
   padding-left: 0;
@@ -10039,6 +10040,7 @@ h3{
   color: white;
 }
 .btn1 { 
+  margin-left:110px;
   color: #B49C73;
   background-color: white;
   border-radius: 0px;
