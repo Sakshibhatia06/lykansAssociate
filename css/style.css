@@ -10038,6 +10038,12 @@ h3{
 .tradingview-widget-copyright a:active .blue-text {
   color: white;
 }
+.btn1 { 
+  color: #B49C73;
+  background-color: white;
+  border-radius: 0px;
+  padding: 10px 25px;
+}
 
 /* Responsive Styles */
 @media (max-width: 768px) {
