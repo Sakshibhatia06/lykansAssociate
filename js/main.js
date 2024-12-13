@@ -149,3 +149,35 @@ function moveCarousel() {
 
 // Change the carousel every 5 seconds
 setInterval(moveCarousel, 5000);
+const blogs = document.querySelectorAll('.blog');
+
+const onScroll = () => {
+    const triggerBottom = window.innerHeight / 5 * 4;
+
+    blogs.forEach(blog => {
+        const blogTop = blog.getBoundingClientRect().top;
+
+        if (blogTop < triggerBottom) {
+            blog.classList.add('show');
+        } else {
+            blog.classList.remove('show');
+        }
+    });
+};
+
+window.addEventListener('scroll', onScroll);
+
+// Initial check
+onScroll();
+function showText(element) {
+    const text = element.querySelector('.hover-text');
+    text.style.visibility = 'visible';
+    text.style.opacity = '1';
+  }
+
+  function hideText(element) {
+    const text = element.querySelector('.hover-text');
+    text.style.visibility = 'hidden';
+    text.style.opacity = '0';
+  }
+
