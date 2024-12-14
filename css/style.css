@@ -10048,7 +10048,6 @@ h3{
   padding: 10px 25px;
 }
 .blog-section {
-  margin-top:20px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -10202,6 +10201,7 @@ h2{
 }
 /* Styling the Number Section */
 .number-container{
+  margin-bottom:30px;
   width: 100vw;
   border-radius: 2px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
