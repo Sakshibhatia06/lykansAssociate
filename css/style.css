@@ -10239,6 +10239,9 @@ h2{
 }
 /* Responsive Styles */
 @media (max-width: 768px) {
+  .blog{
+    flex-direction:column;
+  }
   .item-height{
     height: 50vh; 
   }
@@ -10252,7 +10255,7 @@ h2{
     z-index: 100;
   }
   .number-container{
-    width: 0px;
+    width: 104vw;
   }
   .forex-widget .container, .comm-widget-1 .container {
       flex-direction: column;
