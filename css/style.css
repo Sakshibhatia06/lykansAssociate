@@ -10245,8 +10245,8 @@ h2{
   .navbar-nav{
     align-items: center;
     justify-content: center;
-    margin-top: -180px;
     gap:10px;
+    margin-bottom:10px;
   }
   .navbar{
     z-index: 100;
