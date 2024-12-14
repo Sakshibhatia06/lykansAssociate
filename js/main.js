@@ -183,8 +183,8 @@ function showText(element) {
 // Number counting animation
 document.addEventListener('DOMContentLoaded', function() {
     const numbers = document.querySelectorAll('.number');
-
-    // Function to animate numbers
+    
+    // Function to animate number counting
     function animateNumber(numberElement) {
         const target = parseInt(numberElement.getAttribute('data-target'));
         let currentNumber = 0;
@@ -199,18 +199,25 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 10); // Interval for updating the number
     }
 
-    // Intersection Observer setup
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) { // When the section is in view
+    // Setup Intersection Observer to start animation when section is in view
+    const options = {
+        root: null, // Default: viewport
+        threshold: 0.5 // Trigger when 50% of the section is in view
+    };
+
+    const observer = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                // When section comes into view, start the animation
                 numbers.forEach(function(number) {
                     animateNumber(number);
                 });
                 observer.unobserve(entry.target); // Stop observing after the animation starts
             }
         });
-    }, { threshold: 0.5 }); // Start when 50% of the section is visible
+    }, options);
 
-    // Observe the counter section
-    observer.observe(document.querySelector('#counter-section'));
+    // Observe the section with the numbers
+    const numberSection = document.querySelector('#number-counter');
+    observer.observe(numberSection);
 });
