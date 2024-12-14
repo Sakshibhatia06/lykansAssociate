@@ -180,4 +180,25 @@ function showText(element) {
     text.style.visibility = 'hidden';
     text.style.opacity = '0';
   }
+document.addEventListener('DOMContentLoaded', function() {
+    const numbers = document.querySelectorAll('.number');
+    
+    function animateNumber(numberElement) {
+        const target = parseInt(numberElement.getAttribute('data-target'));
+        let currentNumber = 0;
+        const increment = target / 200; // Controls the speed of the animation
+        const interval = setInterval(function() {
+            currentNumber += increment;
+            if (currentNumber >= target) {
+                currentNumber = target;
+                clearInterval(interval);
+            }
+            numberElement.innerText = Math.floor(currentNumber);
+        }, 10); // Interval for updating the number
+    }
+
+    numbers.forEach(function(number) {
+        animateNumber(number);
+    });
+});
 
