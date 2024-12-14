@@ -180,9 +180,11 @@ function showText(element) {
     text.style.visibility = 'hidden';
     text.style.opacity = '0';
   }
+// Number counting animation
 document.addEventListener('DOMContentLoaded', function() {
     const numbers = document.querySelectorAll('.number');
-    
+
+    // Function to animate numbers
     function animateNumber(numberElement) {
         const target = parseInt(numberElement.getAttribute('data-target'));
         let currentNumber = 0;
@@ -197,8 +199,18 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 10); // Interval for updating the number
     }
 
-    numbers.forEach(function(number) {
-        animateNumber(number);
-    });
-});
+    // Intersection Observer setup
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) { // When the section is in view
+                numbers.forEach(function(number) {
+                    animateNumber(number);
+                });
+                observer.unobserve(entry.target); // Stop observing after the animation starts
+            }
+        });
+    }, { threshold: 0.5 }); // Start when 50% of the section is visible
 
+    // Observe the counter section
+    observer.observe(document.querySelector('#counter-section'));
+});
