@@ -9864,7 +9864,7 @@ h3{
   color: #333;
 }
 .bg-page-header {
-  background: linear-gradient(rgba(55, 55, 63, 0.7), rgba(55, 55, 63, 0.7)), url(../img/pic1.jpg), no-repeat center center;
+  background: linear-gradient(rgba(55, 55, 63, 0.7), rgba(55, 55, 63, 0.7)), url(../img/pic3.jpg), no-repeat center center;
   background-size: cover;
 }
 
@@ -10267,5 +10267,47 @@ h2{
       justify-content: flex-start;
       width: 80vw;
   }
+}
+.company {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 0;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease-in-out;
+  margin-bottom: 30px;
+}
+.company.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.company:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.company .profile {
+  flex: 1;
+  padding: 20px;
+  max-width: 400px;
+  text-align: center;
+}
+.company .profile img {
+width: 300px;
+height: 110px;
+  border-radius: 10px;
+}
+.company .description {
+  flex: 2;
+  padding: 20px;
+}
+.company .description h3 {
+  margin: 0 0 10px;
+  font-size: 1.8rem;
+  color:#88611e;
+}
+.company .description p {
+  font-family: "Merriweather", serif;
+  margin: 0;
+  line-height: 1.6;
+  color: #333;
 }
 
