@@ -22,7 +22,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
@@ -31,8 +31,8 @@
 </head>
 
 <body>
-    <!-- Header Start -->
-    <div class="container-fluid">
+     <!-- Header Start -->
+     <div class="container-fluid" style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1030; background: white; border-bottom: 1px solid #ddd;">
         <div class="row">
             <div class="col-lg-3 d-none d-lg-block">
                 <a href="index.html"
@@ -53,7 +53,7 @@
                         <div class="navbar-nav mr-auto py-0">
                             <a href="index.html" class="nav-item nav-link active">Home</a>
                             <a href="about.html" class="nav-item nav-link">Who We Are</a>
-                          <a href="company.html" class="nav-item nav-link">Our Companies</a>
+                            <a href="company.html" class="nav-item nav-link">Our Companies</a>
                             <a href="team.html" class="nav-item nav-link">Insights</a>
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
                         </div>
@@ -67,7 +67,6 @@
 
 
     <!-- Carousel Start -->
-   <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5 pb-5">
         <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
@@ -141,37 +140,45 @@
 
 
     <!-- Carousel End -->
-    <!-- Carousel End -->
 
 
     <!-- About Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5">
-                    <img class="img-fluid rounded" src="img/pexels-cottonbro-3205504.jpg" alt="">
-                </div>
-                <div class="col-lg-7 mt-4 mt-lg-0">
-                    <h2 class="position-relative text-center bg-white text-primary rounded p-3 mt-4 mb-4 d-none d-lg-block"
-                        style="width: 350px; margin-left: -205px; text-transform:uppercase;">Learn About Us</h2>
-                    <h6 class="text-uppercase"></h6>
-                    <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" class="mb-4">Pave
-                        the Path to a Prosperous Future with Lykans Associates</h1>
-                    <p>At <span style="color: #b98157;">Lykans Associates,</span> we are committed to shaping financial
-                        success stories by delivering innovative, reliable, and tailored investment solutions. Our team
-                        of seasoned professionals, celebrated for their profound expertise and extensive experience
-                        across diverse investment domains, is the cornerstone of our success.<br>
-
-                        With an unwavering pursuit of excellence, we seamlessly blend time-tested strategies with
-                        cutting-edge technologies to identify unparalleled opportunities in an ever-evolving financial
-                        landscape. By employing diversified strategies that prioritize maximizing returns while
-                        mitigating risks, we ensure our clients achieve sustainable growth and enduring prosperity.</p>
-                    <a href="about.html" class="btn btn-primary mt-2">Learn More</a>
-                </div>
+<div class="container-fluid">
+    <div class="container">
+        <div class="text-center pb-2">
+            <h6 class="text-uppercase">About Us</h6>
+            <h1 style="margin-bottom:20px" class="mb-4">Learn About Us</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-5 animated-container">
+                <img class="img-fluid1 rounded animated-left" 
+                     src="img/pexels-cottonbro-3205504.jpg" alt="">
+            </div>
+            <div class="col-lg-7 mt-4 mt-lg-0 animated-container">
+                <h6 class="text-uppercase animated-right"></h6>
+                <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" 
+                    class="mb-4 animated-right">
+                    Pave the Path to a Prosperous Future with Lykans Associates
+                </h1>
+                <p class="animated-right">
+                    At <span style="color: #b98157;">Lykans Associates,</span> we are committed to shaping financial
+                    success stories by delivering innovative, reliable, and tailored investment solutions. Our team
+                    of seasoned professionals, celebrated for their profound expertise and extensive experience
+                    across diverse investment domains, is the cornerstone of our success.<br>
+                    With an unwavering pursuit of excellence, we seamlessly blend time-tested strategies with
+                    cutting-edge technologies to identify unparalleled opportunities in an ever-evolving financial
+                    landscape. By employing diversified strategies that prioritize maximizing returns while
+                    mitigating risks, we ensure our clients achieve sustainable growth and enduring prosperity.
+                </p>
+                <a href="about.html" class="btn btn-primary mt-2 animated-right">Learn More</a>
             </div>
         </div>
     </div>
-    <!-- About End -->
+</div>
+<!-- About End -->
+
+
+
 
 
     <section>
@@ -223,60 +230,6 @@
     </section>
 
 
-
-
-
-    <!-- Features Start -->
-    <div id="why" class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-6" style="min-height: 500px;">
-                    <div class="position-relative h-100 rounded overflow-hidden">
-                        <img class="position-absolute w-100 h-100" src="img/pc2.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-lg-6 pt-5 pb-lg-5">
-                    <div class="feature-text bg-white rounded p-lg-5">
-                        <h6 class="text-uppercase">Our Features</h6>
-                        <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-transform:uppercase;"  class="mb-4">Why Choose Us</h1>
-                        <div class="d-flex mb-4">
-                            <div class="btn-primary btn-lg-square px-3" style="border-radius: 50px;">
-                                <h5 class="text-secondary m-0">01</h5>
-                            </div>
-                            <div class="ml-4">
-                                <h5>Tailored Financial Solutions</h5>
-                                <p class="m-0">We understand that every financial journey is unique. Our bespoke
-                                    strategies are designed to meet your specific needs and goals, ensuring maximum
-                                    growth and security.</p>
-                            </div>
-                        </div>
-                        <div class="d-flex mb-4">
-                            <div class="btn-primary btn-lg-square px-3" style="border-radius: 50px;">
-                                <h5 class="text-secondary m-0">02</h5>
-                            </div>
-                            <div class="ml-4">
-                                <h5>Proven Expertise</h5>
-                                <p class="m-0">Backed by a team of seasoned professionals with years of industry
-                                    experience, we deliver insights and guidance that lead to informed and profitable
-                                    decisions.</p>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <div class="btn-primary btn-lg-square px-3" style="border-radius: 50px;">
-                                <h5 class="text-secondary m-0">03</h5>
-                            </div>
-                            <div class="ml-4">
-                                <h5>Cutting-Edge Technology</h5>
-                                <p class="m-0">Harnessing advanced analytics and state-of-the-art tools, we provide real-time market insights and innovative solutions to keep you ahead in a dynamic financial landscape.
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- Appointment Start -->
     <div id="Connect" class="container-fluid py-5">
         <div class="container py-5">
@@ -284,7 +237,8 @@
                 <div class="row h-100 align-items-center justify-content-center">
                     <div class="col-lg-6 py-5">
                         <div class="rounded p-5 my-5" style="background: rgba(55, 55, 63, .7);">
-                            <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-transform:uppercase;" class="text-center text-white mb-4">Get An Appointment</h1>
+                            <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"
+                                class="text-center text-white mb-4">Get An Appointment</h1>
                             <form>
                                 <div class="form-group">
                                     <input type="text" class="form-control border-0 p-4" placeholder="Your Name"
@@ -336,6 +290,7 @@
         </div>
     </div>
     <!-- Appointment End -->
+    <!-- Number Counter Section Start -->
     <div class="py-5 row text-center number-container" id="number-counter">
         <div class="col-md-3">
             <div class="number-box">
@@ -362,8 +317,149 @@
             </div>
         </div>
     </div>
-    <h1 style="text-align: center; text-transform:uppercase; font-family:Georgia, 'Times New Roman', Times, serif;margin-top:30px; margin-bottom:20px">Latest Blogs & News</h1>
-    <section id="blog" class="blog-section">
+    <!-- Number Counter Section End -->
+     
+
+
+
+
+    <!-- Features Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6" style="min-height: 500px;">
+                    <div class="position-relative h-100 rounded overflow-hidden">
+                        <img class="position-absolute w-100 h-100" src="img/pc2.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-5 pb-lg-5">
+                    <div class="feature-text bg-white rounded p-lg-5">
+                        <h6 class="text-uppercase">Our Features</h6>
+                        <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" class="mb-4">
+                            Why Choose Us</h1>
+                        <div class="d-flex mb-4">
+                            <div class="btn-primary btn-lg-square px-3" style="border-radius: 50px;">
+                                <h5 class="text-secondary m-0">01</h5>
+                            </div>
+                            <div class="ml-4">
+                                <h5>Tailored Financial Solutions</h5>
+                                <p class="m-0">We understand that every financial journey is unique. Our bespoke
+                                    strategies are designed to meet your specific needs and goals, ensuring maximum
+                                    growth and security.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="btn-primary btn-lg-square px-3" style="border-radius: 50px;">
+                                <h5 class="text-secondary m-0">02</h5>
+                            </div>
+                            <div class="ml-4">
+                                <h5>Proven Expertise</h5>
+                                <p class="m-0">Backed by a team of seasoned professionals with years of industry
+                                    experience, we deliver insights and guidance that lead to informed and profitable
+                                    decisions.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="btn-primary btn-lg-square px-3" style="border-radius: 50px;">
+                                <h5 class="text-secondary m-0">03</h5>
+                            </div>
+                            <div class="ml-4">
+                                <h5>Cutting-Edge Technology</h5>
+                                <p class="m-0">Harnessing advanced analytics and state-of-the-art tools, we provide
+                                    real-time market insights and innovative solutions to keep you ahead in a dynamic
+                                    financial landscape.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center pb-2">
+                <h6 class="text-uppercase">Our Team</h6>
+                <h1 class="mb-4">Meet Our Team</h1>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="bg-primary rounded" style="height: 200px;"></div>
+                    <div class="owl-carousel team-carousel position-relative" style="margin-top: -97px; padding: 0 30px;">
+                        <div class="team-item text-center bg-white rounded overflow-hidden pt-4">
+                            <h5 class="mb-2 px-4">Name</h5>
+                            <p class="mb-3 px-4">Practice Area</p>
+                            <div class="team-img position-relative">
+                                <img class="img-fluid" src="img/team-1.jpg" alt="">
+                                <div class="team-social">
+                                    <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-item text-center bg-white rounded overflow-hidden pt-4">
+                            <h5 class="mb-2 px-4">Name</h5>
+                            <p class="mb-3 px-4">Practice Area</p>
+                            <div class="team-img position-relative">
+                                <img class="img-fluid" src="img/team-2.jpg" alt="">
+                                <div class="team-social">
+                                    <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-item text-center bg-white rounded overflow-hidden pt-4">
+                            <h5 class="mb-2 px-4">Name</h5>
+                            <p class="mb-3 px-4">Practice Area</p>
+                            <div class="team-img position-relative">
+                                <img class="img-fluid" src="img/team-3.jpg" alt="">
+                                <div class="team-social">
+                                    <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-item text-center bg-white rounded overflow-hidden pt-4">
+                            <h5 class="mb-2 px-4">Name</h5>
+                            <p class="mb-3 px-4">Practice Area</p>
+                            <div class="team-img position-relative">
+                                <img class="img-fluid" src="img/team-4.jpg" alt="">
+                                <div class="team-social">
+                                    <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-item text-center bg-white rounded overflow-hidden pt-4">
+                            <h5 class="mb-2 px-4">Name</h5>
+                            <p class="mb-3 px-4">Practice Area</p>
+                            <div class="team-img position-relative">
+                                <img class="img-fluid" src="img/team-5.jpg" alt="">
+                                <div class="team-social">
+                                    <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+    <div class="text-center py-5">
+        <h6 class="text-uppercase">Blogs & News</h6>
+        <h1 style="margin-bottom:20px" class="mb-4">Latest Blogs & News</h1>
+    </div>
+
+    <section class="blog-section">
 
         <div class="blog">
             <div class="content" onmouseover="showText(this)" onmouseout="hideText(this)">
@@ -440,7 +536,8 @@
         </div>
     </section>
     <div class="container1">
-         <h1 style="text-align: center;margin-top:10px; text-transform:uppercase; font-family:Georgia, 'Times New Roman', Times, serif">Our Companies</h1>
+        <h1 style="text-align: center; text-transform:uppercase; font-family:Georgia, 'Times New Roman', Times, serif">
+            Our Companies</h1>
         <div class="swiper">
             <div class="swiper-wrapper">
                 <!-- Slide 1 -->
@@ -496,7 +593,7 @@
                         </a>
                         <div class="logo-div">
                             <h6>Listed on</h6>
-                            <h4>Lykans</h4>
+                            <h4>Lycans</h4>
                         </div>
                     </div>
                 </div>
@@ -615,8 +712,10 @@
         </div>
     </div>
 
-     <!-- Footer Start -->
-    <div class="container-fluid bg-secondary text-white pt-5 px-sm-3 px-md-5">
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-secondary text-white pt-5 px-sm-3 px-md-5" style="margin-top: 90px;">
         <div class="row mt-5">
             <div class="col-lg-4">
                 <div class="d-flex justify-content-lg-center p-4" style="background: rgba(256, 256, 256, .05);">
@@ -632,7 +731,7 @@
                     <i class="fa fa-2x fa-envelope-open text-primary"></i>
                     <div class="ml-3">
                         <h5 class="text-white">Email Us</h5>
-                        <p class="m-0">contact@lykansassociate.com</p>
+                        <p class="m-0">contact@lykansassociates.com</p>
                     </div>
                 </div>
             </div>
@@ -667,12 +766,13 @@
                     <a class="text-white mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
                     <a class="text-white mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About</a>
                     <a class="text-white mb-2" href="#why"><i class="fa fa-angle-right mr-2"></i>Why Us?</a>
+                    <a class="text-white mb-2" href="company.html"><i class="fa fa-angle-right mr-2"></i>Our Companies</a>
                     <a class="text-white" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contact</a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-5">
                 <h4 class="font-weight-semi-bold text-primary mb-4">Newsletter</h4>
-                <p>At Lykans Associate, we are committed to shaping financial success stories by delivering innovative,
+                <p>At Lykans Associates, we are committed to shaping financial success stories by delivering innovative,
                     reliable, and tailored investment solutions. </p>
                 <div class="w-100">
                     <div class="input-group">
@@ -688,13 +788,12 @@
         <div class="row p-4  mx-0" style="background: rgba(256, 256, 256, .05);">
             <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
                 <p style="text-align: center;" class="m-0 text-white">&copy; <a class="font-weight-bold"
-                        href="#">lykansassociate.com</a>. All Rights
+                        href="#">lykansassociates.com</a>. All Rights
                     Reserved.</p>
             </div>
         </div>
     </div>
     <!-- Footer End -->
-
 
 
     <!-- Back to Top -->
